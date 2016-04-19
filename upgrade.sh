@@ -114,7 +114,7 @@ if [[ -e "/usr/local/cpanel/whostmgr/docroot/cgi/letsencrypt/letsencrypt.pl" ]];
   fi
 
 
-  echo -e "\033[40m\033[001;031mSuccessfully updated letsencrypt manager\033[0m"
+  echo -e "\033[40m\033[001;031mSuccessfully updated Let's Encrypt Manager\033[0m"
   exit 1;
 fi
 

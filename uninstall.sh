@@ -19,6 +19,6 @@ if [ -e "/usr/local/cpanel/base/3rdparty/letsencrypt-cpanel-ui/" ]; then
 fi
 
 
-echo -e "\033[40m\033[001;031mSuccessfully removed  letsencrypt manager\033[0m"
+echo -e "\033[40m\033[001;031mSuccessfully removed  Let's Encrypt Manager\033[0m"
 
 

@@ -122,6 +122,18 @@ sub _install_cert {
         return wantarray ? ('0', $status->{'metadata'}->{'reason'}) : '0';
     }
 
+    my $status = $self->{'whmapi'}->liveapi_request(
+		'restartservice',
+		{
+			'api.version' => '1',
+			'service' => 'chkservd'
+	    }
+	);
+
+    if ( !$status->{'metadata'}->{'result'} ) {
+	    return wantarray ? ('0', $status->{'metadata'}->{'reason'}) : '0';
+	}
+
     return wantarray ? ('1', $status->{'metadata'}->{'reason'}) : '1';
 }
 

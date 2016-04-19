@@ -119,9 +119,8 @@ elsif ($action eq 'service') {
        build_template('index.tt', $vars);
        exit 0;
     }
-
-    $vars->{message} = "Installed certificate for cPanel/WHM services, please restart 'cpsrvd' daemon using '/scripts/restartsrv_cpsrvd'";
-    print $cgi->header();
+	$vars->{message} = "Installed certificate for cPanel/WHM services, please restart 'cpsrvd' daemon using '/scripts/restartsrv_cpsrvd'";
+	print $cgi->header();
     build_template('index.tt', $vars);
     exit 0;
 }
